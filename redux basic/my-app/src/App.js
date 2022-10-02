@@ -3,7 +3,7 @@ import Counter from './components/Counter';
 import CounterActions from './components/CounterActions';
 
 function App() {
-  const [ count, setCount] = useState(1)
+  const [ count, setCount] = useState(0)
   return (
     <div >
       <Counter count = {count} />
