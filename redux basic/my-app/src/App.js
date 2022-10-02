@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Counter from './components/Counter';
+import CounterActions from './components/CounterActions';
 
 function App() {
+  const [ count, setCount] = useState(1)
   return (
     <div >
-      test
+      <Counter count = {count} />
+      <CounterActions count = {count} setCount = {setCount}/>
     </div>
   );
 }
